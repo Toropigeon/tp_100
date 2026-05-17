@@ -32,12 +32,3 @@ flutter run
 CSV должен содержать числовые колонки диагностических параметров. Колонка времени может называться `timestamp`, `time`, `datetime`, `date`, `время` или `дата`.
 
 Пример находится в `backend/sample_data/tp100_sample.csv`.
-
-## Бесплатная удаленная LLM
-
-По умолчанию используется mock-LLM. Чтобы подключить бесплатный удаленный режим OpenRouter:
-
-1. Создай API key на OpenRouter.
-2. Укажи ключ в `.env`: `OPENROUTER_API_KEY=...`
-3. Поставь `LLM_PROVIDER=openrouter`
-4. Оставь `OPENROUTER_MODEL=openrouter/free` или укажи конкретную бесплатную модель OpenRouter.
